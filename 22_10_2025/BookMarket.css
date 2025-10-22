@@ -1,0 +1,213 @@
+/* =======================
+   1. Style chung cho toàn trang
+   ======================= */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Đặt container chung cho nội dung */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =======================
+   2. Header và Menu
+   ======================= */
+header {
+  background-color: black;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 30px;
+}
+
+/* Giữ nội dung header nằm ngang và giữa */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tên cửa hàng hoặc logo */
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Menu ngang */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* tạo menu ngang */
+}
+
+/* Các mục menu */
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Liên kết trong menu */
+nav ul li a {
+  color: #888;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Hiệu ứng hover */
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* =======================
+   3. Nội dung chính (sau header)
+   ======================= */
+main {
+  padding-top: 50px; /* chừa chỗ cho header cố định */
+}
+
+/* =======================
+   4. Danh sách sản phẩm
+   ======================= */
+
+/* Mỗi sản phẩm */
+
+.product-item {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* tự động xuống hàng nếu màn hình nhỏ */
+    margin-top: 50px;
+}
+
+.product-item article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   5. Form liên hệ / đặt hàng
+   ======================= */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Nút gửi */
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* =======================
+   6. Footer
+   ======================= */
+footer {
+  background-color: black;
+  color: gray;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* =======================
+   7. Thiết kế Responsive (cho mobile)
+   ======================= */
+@media (max-width: 600px) {
+  /* Menu chuyển dọc */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Thu nhỏ header */
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* =======================
+   8. Đảm bảo hình ảnh co dãn hợp lý
+   ======================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =======================
+   9. Thanh tìm kiếm
+   ======================= */
+   #bar{
+    padding-top: 50px;
+   }
+   #sologan{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 50px;
+   }
+   #addproductBtn{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+   }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng sách Bách Khoa</title>
+    <link rel="stylesheet" href="BookMarket.css">
+</head>
+<body>
+    <header>
+    <h1>BKBookStore</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Cửa hàng sách</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="sologan">Hãy đến với chúng tôi nếu bạn muốn đọc sách</section>
+        <section id="bar">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..."> 
+            <button id="searchBtn">Tìm</button>
+        </section>
+        
+        <div class="product-item">
+            <article>
+                <h3>Sách giải tích 1</h3>
+                <p>Giá: 150.000 VND</p>
+                <p>Mô tả: Sách giải tích dành cho sinh viên đại học</p>
+            </article>
+
+            <article>
+                <h3>Sách giải tích 2</h3>
+                <p>Giá: 150.000 VND</p>
+                <p>Mô tả: Sách giải tích dành cho sinh viên đại học</p>
+            </article>
+
+            <article>
+                <h3>Sách giải tích 3</h3>
+                <p>Giá: 150.000 VND</p>
+                <p>Mô tả: Sách giải tích dành cho sinh viên đại học</p>
+            </article>
+        </div>
+        <button id="addProductBtn">Thêm sản phẩm</button> 
+
+        <footer><b>Địa chỉ: </b>Số 1 Tạ Quang Bửu, Bách Khoa, Hà Nội</footer></br>
+        <form>
+            <label>Tên</label><br>
+            <input type="text" placeholder="Tên của bạn"><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Email của bạn"><br>
+            <label>Nội dung</label><br>
+            <textarea placeholder="Nội dung"></textarea><br>
+            <button type="submit">Gửi</button>
+        </form>
+    </main>
+    <script src="BookMarket.js"></script>
+</body>
+</html>
